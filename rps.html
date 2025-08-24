@@ -12,7 +12,12 @@
             return choices[Math.floor(Math.random() * choices.length)]
         };
 
-        console.log( computerChoice(choices) );
+        const getHumanChoice = () => {
+            let choice = prompt("Enter rock, paper, or scissors: ").toLowerCase();
+            return choice;
+        }
+
+        console.log( getHumanChoice());
     </script>
 </body>
 </html>
